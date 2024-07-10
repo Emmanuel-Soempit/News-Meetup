@@ -2,25 +2,6 @@ import MeetupList from "@/components/meetups/MeetupList";
 import { MongoClient } from "mongodb";
 import Head from "next/head";
 
-export const DUMMY_MEETUPS = [
-  {
-    id: "m1",
-    title: "A First Meetup",
-    image:
-      "https://th.bing.com/th/id/OIP.rpOqHFfq5hTMfenixciZzgHaEo?rs=1&pid=ImgDetMain",
-    address: "Some address 5, some city 3357",
-    description: "This is the first meetup!",
-  },
-  {
-    id: "m2",
-    title: "A Second Meetup",
-    image:
-      "https://th.bing.com/th/id/OIP.rpOqHFfq5hTMfenixciZzgHaEo?rs=1&pid=ImgDetMain",
-    address: "Some address 10, some city 3458",
-    description: "This is the Second meetup!",
-  },
-];
-
 async function HomePage() {
   const meetups = await getMeetUps();
 

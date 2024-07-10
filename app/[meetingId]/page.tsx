@@ -1,7 +1,5 @@
 import MeetupItem from "@/components/meetups/MeetupItem";
-import { DUMMY_MEETUPS } from "../page";
 import { MongoClient, ObjectId } from "mongodb";
-import { title } from "process";
 
 
 
